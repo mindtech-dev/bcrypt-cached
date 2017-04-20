@@ -29,8 +29,11 @@ class bcryptCached {
           bcrypt.compare(text, hash).then((res) => {
             // save result to cache and resolve
             this._cache.set(_compound(hash, text), String(res), (err, success) => {
-              if (err) throw err
-              resolve(res)
+              if (err) {
+                reject(err)
+              } else {
+                resolve(res)
+              }
             })
           })
         } else {
