@@ -1,0 +1,40 @@
+{
+  "name": "bcrypt-cached",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristovao-trevisan/bcrypt-cached.git"
+  },
+  "keywords": [
+    "cache",
+    "bcrypt",
+    "memory"
+  ],
+  "author": "Cristóvão Trevisan",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cristovao-trevisan/bcrypt-cached/issues"
+  },
+  "homepage": "https://github.com/cristovao-trevisan/bcrypt-cached#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "node-cache": "^4.1.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "env": "jasmine"
+  },
+  "jasmine": {
+    "spec_files": [
+      "**/*[sS]pec.js"
+    ]
+  }
+}
