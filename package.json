@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/cristovao-trevisan/bcrypt-cached#readme",
   "dependencies": {
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^3.0.0",
     "node-cache": "^4.1.1"
   },
   "devDependencies": {
